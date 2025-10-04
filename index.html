@@ -16,13 +16,42 @@
 
     <!-- Header -->
     <header>
-        <h1>My Todo List</h1>
+        <h1 class="text-3l font-bold">abyanN Todo List</h1>
     </header>
 
     <!-- Main Content -->   
     <main>
+        <!-- Input Section -->
+        <section>   
+            <form action="todo-form">
+                <input type="text" class="border rounded p[8px]" id="todo-input" placeholder="Add a new task...">
+                <input type="date" class="border rounded p[8px]" id="todo-date" placeholder="Add a new task...">
+                <button type="button" onclick="addTodo()" class="bg-orange-500 rounded text-white p[8px]">Add</button>
+                <!-- MASALAHNYA DISINI(29) TAPI GATAU NGEBENERINNYA GIMANA -->
+            </form>
+        </section>
+
+        <!-- List Todo -->
+        <section class="mt-4">
+            <ul id="todo-list" class="list-disc list-inside">
+                <p class="text-center font-gray-500">Your Todo List</p>
+                
+            </ul>
+
+        <!-- action button -->
+        <section class="mt-[16px] flex gap-2">
+            <button class="bg-red-500 rounded text-black p-[8px]" onclick="deleteAllTodo()">Delete All</button>
+            <button class="bg-green-500 rounded text-black p-[8px]">Filter</button>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by AbyanN</p>
+    </footer>
         
         <!-- Javascript -->
-    <link src="script.js"></link>
+    <link src="js\script.js"></link>
 </body>
-</html>
+</html> 
